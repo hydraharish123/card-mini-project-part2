@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+.container{
+    background-color: rgb(254, 254, 254);
+    padding:30px 20px;
+    margin:auto auto;
+    
+    
+}
+ /*Header CSS */
+.header{
+    text-align: center;
+    max-width:500px;
+    margin:0 auto;
+}
+
+.header h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.header p{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/*grid CSS*/
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    padding:20px;
+}
+
+.grid .box1,.box3{
+    padding:30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    width:300px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+
+
+.title{
+    font-size:19px;
+    font-weight: 600;
+}
+
+.price{
+    font-size: 55px;
+    padding:5px 0px;
+    margin:10px 0px;
+}
+.features{
+    position: relative;
+}
+.features > *{
+    padding:10px 0px 10px 0px;
+    margin:5px 0px 5px 0px;
+    border-bottom: 1px solid black;
+}
+
+/*box css*/
+.button{
+    margin:20px 0px 5px 0px;
+    background: linear-gradient(to bottom, #15488f,#18668d);
+    padding:15px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    
+}
+
+.box2{
+    color:white;
+    padding:30px;
+    background: linear-gradient(to bottom, #15488f,#18668d);
+    text-align: center;
+    border-radius: 4px;
+    width:300px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    transform:scale(1.1);
+}
+
+.box2 .features>*{
+    border-bottom: 1px solid white;
+}
+
+.box2 .button{
+    background:white;
+   
+}
+
+.box2 a{
+    color: rgb(0, 23, 169);
+}
+
+
+
+
+
+
+@media (max-width:1025px){
+    .box2{
+        transform: scale(1);
+    }
+    .grid{
+        gap:20px;
+    }
+}
+
+@media(max-width:786px){
+    .grid .box{
+        width:100%;
+    }
+}
